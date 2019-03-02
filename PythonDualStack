@@ -1,0 +1,408 @@
+import getpass
+import sys
+import telnetlib
+
+#Prompt for telnet username and store as user
+#Use getpass module to save password
+
+user = raw_input("\n\n\n                                    *****You are attempting to deploy an automated script on the network***** \n\n\n\n                                                            ****PROCEED WITH CAUTION***** \n\n\n\n\n\nPlease enter your Username: ")
+password = getpass.getpass()
+
+mask = " 255.255.255.0"
+
+
+for z in range (1, 39):
+
+
+		HOST = "1.1.1." + str(z)
+		jo = z
+
+		tn = telnetlib.Telnet(HOST)
+
+		tn.read_until("Username: ")
+		tn.write(user + "\n")
+		if password:
+			tn.read_until("Password: ")
+			tn.write(password + "\n")
+
+
+		print("\n\n\n\n" + "~" * 55 + "\nYou have successfully connected to host: " + HOST + "\n" + "~" * 55)
+		tn.write("conf t\n")
+		tn.write("vtp mode trans\n")
+		tn.write("hostname Switch" + str(jo) + "\n")
+		tn.write("banner motd &This banner was Automated by IPvZero. Don't change the configs or you will be prosecuted!&\n")
+		tn.write("ipv6 unicast-routing\n")
+		tn.write("key chain JOHN\n")
+		tn.write("key 1\n")
+		tn.write("key-string IPvZero\n")
+		tn.write("exit\n")
+		tn.write("exit\n")
+		tn.write("router eigrp PYTHON\n")
+		tn.write("address-family ipv6 autonomous-system 1\n")
+		tn.write("af-interface default\n")
+		tn.write("hello 1\n")
+		tn.write("hold 3\n")
+		tn.write("authentication key-chain JOHN\n")
+		tn.write("authentication mode hmac-sha-256 7 CISCOJOHN\n")
+		tn.write("exit\n")
+		tn.write("eigrp router-id 1.1.1." + str(jo) + "\n")
+		tn.write("exit\n")
+		tn.write("exit\n")
+		tn.write("int loopback66\n")
+		tn.write("ipv6 address 2001:db8:acad:ff::" + str(jo) + "/128\n")
+		tn.write("no shut\n")
+
+		tn.write("end\n")
+		tn.write("exit\n")
+
+		print tn.read_all()
+
+
+
+for z in range (1, 2):
+
+
+		HOST = "1.1.1." + str(z)
+		jo = z
+
+		tn = telnetlib.Telnet(HOST)
+
+		tn.read_until("Username: ")
+		tn.write(user + "\n")
+		if password:
+			tn.read_until("Password: ")
+			tn.write(password + "\n")
+
+
+		print("\n\n\n\n" + "~" * 55 + "\nYou have successfully connected to host: " + HOST + "\n" + "~" * 55)
+		tn.write("conf t\n")
+		for i in range(0,4):
+			for j in range(0, 4):
+				if i == 3 and j == 1:
+					continue
+				if i == 3 and j == 2:
+					continue
+				if i == 3 and j == 3:
+					continue
+				tn.write("interface eth" + str(i) + "/" + str(j) + "\n")
+				tn.write("ipv6 address 2001:db8:acad:" + str(jo) + str(i) + str(j) + "::1/64\n")
+				tn.write("no shut\n")
+		
+		tn.write("end\n")
+		tn.write("exit\n")
+
+		print tn.read_all()
+
+
+
+
+for z in range (2, 3):
+		HOST = "1.1.1." + str(z)
+		jo = z
+
+		tn = telnetlib.Telnet(HOST)
+
+		tn.read_until("Username: ")
+		tn.write(user + "\n")
+		if password:
+			tn.read_until("Password: ")
+			tn.write(password + "\n")
+
+
+		print("\n\n\n\n" + "~" * 55 + "\nYou have successfully connected to host: " + HOST + "\n" + "~" * 55)
+		tn.write("conf t\n")
+		tn.write("int e0/0\n")
+		tn.write("ipv6 address autoconfig\n")
+		tn.write("exit\n")
+		for i in range(0,4):
+			for j in range(0, 4):
+				if i == 0 and j == 0:
+					continue
+				if i == 3 and j == 1:
+					continue
+				if i == 3 and j == 2:
+					continue
+				if i == 3 and j == 3:
+					continue
+				tn.write("interface eth" + str(i) + "/" + str(j) + "\n")
+				tn.write("ipv6 address 2001:db8:acad:" + str(jo) + str(i) + str(j) + "::1/64\n")
+				tn.write("no shut\n")
+		
+		tn.write("end\n")
+		tn.write("exit\n")
+
+		print tn.read_all()
+
+
+for z in range (3, 15):
+		HOST = "1.1.1." + str(z)
+		jo = z
+
+		tn = telnetlib.Telnet(HOST)
+
+		tn.read_until("Username: ")
+		tn.write(user + "\n")
+		if password:
+			tn.read_until("Password: ")
+			tn.write(password + "\n")
+
+
+		print("\n\n\n\n" + "~" * 55 + "\nYou have successfully connected to host: " + HOST + "\n" + "~" * 55)
+		tn.write("conf t\n")
+		tn.write("int range e0/1-2\n")
+		tn.write("ipv6 address autoconfig\n")
+		tn.write("no shut\n")
+
+		tn.write("end\n")
+		tn.write("exit\n")
+
+		print tn.read_all()
+
+
+
+for z in range (3, 15, 2):
+		HOST = "1.1.1." + str(z)
+		jo = z
+
+		tn = telnetlib.Telnet(HOST)
+
+		tn.read_until("Username: ")
+		tn.write(user + "\n")
+		if password:
+			tn.read_until("Password: ")
+			tn.write(password + "\n")
+
+
+		print("\n\n\n\n" + "~" * 55 + "\nYou have successfully connected to host: " + HOST + "\n" + "~" * 55)
+		tn.write("conf t\n")
+		for i in range(0, 2):
+			for j in range(0, 4):
+				if i == 0 and j == 1:
+					continue
+				if i == 0 and j == 2:
+					continue
+				if i == 0 and j == 3:
+					continue
+				tn.write("interface eth" + str(i) + "/" + str(j) + "\n")
+				tn.write("ipv6 address 2001:db8:acad:" + str(jo) + str(i) + str(j) + "::1/64\n")
+				tn.write("no shut\n")
+
+		tn.write("end\n")
+		tn.write("exit\n")
+
+		print tn.read_all()
+
+
+for z in range (4, 15, 2):
+		HOST = "1.1.1." + str(z)
+		jo = z
+
+		tn = telnetlib.Telnet(HOST)
+
+		tn.read_until("Username: ")
+		tn.write(user + "\n")
+		if password:
+			tn.read_until("Password: ")
+			tn.write(password + "\n")
+
+
+		print("\n\n\n\n" + "~" * 55 + "\nYou have successfully connected to host: " + HOST + "\n" + "~" * 55)
+		tn.write("conf t\n")
+		tn.write("int e0/0\n")
+		tn.write("ipv6 address autoconfig\n")
+		for i in range(0, 4):
+			tn.write("interface eth 1/" + str(i) + "\n")
+			tn.write("ipv6 address 2001:db8:acad:a" + str(jo) + str(i) + "::1/64\n")
+			tn.write("no shut\n")
+
+
+		tn.write("end\n")
+		tn.write("exit\n")
+
+		print tn.read_all()
+
+
+for z in range (15, 39):
+		HOST = "1.1.1." + str(z)
+		jo = z
+
+		tn = telnetlib.Telnet(HOST)
+
+		tn.read_until("Username: ")
+		tn.write(user + "\n")
+		if password:
+			tn.read_until("Password: ")
+			tn.write(password + "\n")
+
+
+		print("\n\n\n\n" + "~" * 55 + "\nYou have successfully connected to host: " + HOST + "\n" + "~" * 55)
+		tn.write("conf t\n")
+		tn.write("int range eth0/0-1\n")
+		tn.write("ipv6 address autoconfig\n")
+		tn.write("no shut\n")
+
+		tn.write("end\n")
+		tn.write("exit\n")
+
+		print tn.read_all()
+
+for z in range (15, 39):
+		HOST = "1.1.1." + str(z)
+		jo = z
+
+		tn = telnetlib.Telnet(HOST)
+
+		tn.read_until("Username: ")
+		tn.write(user + "\n")
+		if password:
+			tn.read_until("Password: ")
+			tn.write(password + "\n")
+
+
+		print("\n\n\n\n" + "~" * 55 + "\nYou have successfully connected to host: " + HOST + "\n" + "~" * 55)
+		tn.write("conf t\n")
+		tn.write("ip dhcp exclude 10." + str(jo) + ".10.1\n")
+		tn.write("ip dhcp pool POOL10\n")
+		tn.write("defau 10." + str(jo) + ".10.1\n")
+		tn.write("network 10." + str(jo) + ".10.0 255.255.255.0\n")
+		tn.write("domain IPvZero.com\n")
+		tn.write("dns 8.8.8.8\n")
+		tn.write("exit\n")
+		tn.write("vlan 10\n")
+		tn.write("name Data\n")
+		tn.write("vlan 20\n")
+		tn.write("name Voice\n")
+		tn.write("Vlan 30\n")
+		tn.write("name Wireless\n")
+		tn.write("Vlan 40\n")
+		tn.write("name Printers\n")
+		tn.write("exit\n")
+		for i in range(10, 41, 10):
+			tn.write("int vlan " + str(i) + "\n")
+			tn.write("ip address 10." + str(jo) + "." + str(i) + "." + "1" + mask + "\n")
+			tn.write("ipv6 address 2001:db8:" + str(jo) + ":" + str(i) + "::1/64\n")
+			tn.write("no shut\n")
+
+		tn.write("end\n")
+		tn.write("exit\n")
+
+		print tn.read_all()
+
+
+for z in range (1, 39):
+
+
+		HOST = "2001:db8:acad:ff::" + str(z)
+		jo = z
+
+		tn = telnetlib.Telnet(HOST)
+
+		tn.read_until("Username: ")
+		tn.write(user + "\n")
+		if password:
+			tn.read_until("Password: ")
+			tn.write(password + "\n")
+
+
+		print("\n\n\n\n" + "~" * 65 + "\nYou have successfully connected to host: " + HOST + "\n" + "~" * 65)
+		tn.write("conf t\n")
+		tn.write("key chain JOHN\n")
+		tn.write("key 1\n")
+		tn.write("key-string IPvZero\n")
+		tn.write("exit\n")
+		tn.write("exit\n")
+		tn.write("router eigrp PYTHON\n")
+		tn.write("address-family ipv4 autonomous-system 1\n")
+		tn.write("network 0.0.0.0 0.0.0.0\n")
+		tn.write("af-interface default\n")
+		tn.write("hello 1\n")
+		tn.write("hold 3\n")
+		tn.write("authentication key-chain JOHN\n")
+		tn.write("authentication mode hmac-sha-256 7 CISCOJOHN\n")
+		tn.write("exit\n")
+
+		tn.write("end\n")
+		tn.write("exit\n")
+
+		print tn.read_all()
+
+
+for z in range (15, 39):
+
+
+		HOST = "2001:db8:acad:ff::" + str(z)
+		jo = z
+
+		tn = telnetlib.Telnet(HOST)
+
+		tn.read_until("Username: ")
+		tn.write(user + "\n")
+		if password:
+			tn.read_until("Password: ")
+			tn.write(password + "\n")
+
+
+		print("\n\n\n\n" + "~" * 65 + "\nYou have successfully connected to host: " + HOST + "\n" + "~" * 65)
+		tn.write("conf t\n")
+		tn.write("router eigrp PYTHON\n")
+		tn.write("address-family ipv4 autonomous-system 1\n")
+		tn.write("eigrp stub connected\n")
+
+
+		tn.write("end\n")
+		tn.write("exit\n")
+
+		print tn.read_all()
+
+for z in range (15, 39):
+
+
+		HOST = "1.1.1." + str(z)
+		jo = z
+
+		tn = telnetlib.Telnet(HOST)
+
+		tn.read_until("Username: ")
+		tn.write(user + "\n")
+		if password:
+			tn.read_until("Password: ")
+			tn.write(password + "\n")
+
+
+		print("\n\n\n\n" + "~" * 65 + "\nYou have successfully connected to host: " + HOST + "\n" + "~" * 65)
+		tn.write("conf t\n")
+		tn.write("router eigrp PYTHON\n")
+		tn.write("address-family ipv6 autonomous-system 1\n")
+		tn.write("eigrp stub connected\n")
+
+
+		tn.write("end\n")
+		tn.write("exit\n")
+
+		print tn.read_all()
+
+
+for z in range (1, 39):
+
+
+		HOST = "2001:db8:acad:ff::" + str(z)
+		jo = z
+
+		tn = telnetlib.Telnet(HOST)
+
+		tn.read_until("Username: ")
+		tn.write(user + "\n")
+		if password:
+			tn.read_until("Password: ")
+			tn.write(password + "\n")
+
+
+		print("\n\n\n\n" + "~" * 65 + "\nYou have successfully connected to host: " + HOST + "\n" + "~" * 65)
+		tn.write("conf t\n")
+		tn.write("no router eigrp 2\n")
+		tn.write("end\n")
+		tn.write("exit\n")
+
+		print tn.read_all()
+
+
