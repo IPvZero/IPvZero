@@ -1,0 +1,32 @@
+---
+
+- name: John's Generic Router Configuration
+  hosts: routers
+  gather_facts: false
+  connection: local
+
+  vars:
+    cli:
+      username: john
+      password: cisco
+      timeout: 100
+
+  tasks:
+    - name: Global config settings
+      ios_config:
+        provider: "{{ cli }}"
+        lines:
+          - ipv6 unicast-routing
+          - errdisable recovery interval 60
+          - security passwords min-length 5
+          - ip name-server 99.99.99.99
+          - no ip http server
+          - ip http secure-server
+          - snmp-server community ipvzero1 RO
+          - snmp-server community ipvzero2 RW
+          - ntp server 99.99.99.99
+          - banner motd &**********THIS IS JOHN'S ROUTER - DO NOT MAKE CHANGES UNLESS AUTHORISED! YOU WILL BE PROSECUTED! **********&
+
+      register: print_output
+
+    -  debug: var=print_output
