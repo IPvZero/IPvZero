@@ -1,0 +1,42 @@
+---
+
+- name: "Initialising Ansible..."  
+  hosts: localhost
+
+  tasks:
+    - name: "Job 1 of PLAY 1: Enumerating Local Time & Date..."
+      setup:
+        filter: "ansible_date_time"
+        gather_subset: "!all"
+
+    - name: "Job 2 of PLAY 1: Recording Information as variable: TD"
+      set_fact:
+        TD: "{{ ansible_date_time.date }}"
+
+    - name: "Job 3 of PLAY1: Creating Calendar Subfolders..."
+      file:
+        path: ~/Calendar/{{hostvars.localhost.TD}}
+        state: directory
+      run_once: true
+
+
+- name: "PLAY 2: Capture Snapshot Of Working Configurations"
+  hosts: all
+  connection: network_cli
+  tasks:
+    - name: "Job 1 of PLAY 2: Retrieving Runnings Configs!"
+      ios_command:
+        commands: 
+          - show run 
+      register: response
+
+    - name: "Job 2 of PLAY 2: Creating Snapshot Subfolder..."
+      file:
+        path: "~/Calendar/{{hostvars.localhost.TD}}/SNAPSHOTS"
+        state: directory
+      run_once: true
+
+    - name: "Job 3 of PLAY 2: Piping STDOUT to target subfolder..."
+      copy: 
+        content: "{{ response.stdout[0] }}\n"
+        dest: "~/Calendar/{{hostvars.localhost.TD}}/SNAPSHOTS/{{ inventory_hostname }}-running-config.txt"
