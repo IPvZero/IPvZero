@@ -1,0 +1,23 @@
+---
+
+all:
+  children:
+    routers:
+      children:
+        eigrp_routers:
+          hosts:
+            R1:
+            R3:
+            R5:
+            R7:
+            R9:
+        eigrp_named_routers:
+          hosts:
+            R2:
+            R4:
+            R6:
+            R8:
+            R10:
+
+
+
