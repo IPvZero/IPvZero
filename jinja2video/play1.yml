@@ -1,0 +1,24 @@
+---
+
+- name: "First Play: Automate Routing Configs via Jinja2"
+  hosts: routers
+  connection: network_cli
+  tasks:
+    - name: "First Task: Identify Correct Jinja Template"
+      set_fact:
+        eigrp_path: "templates/{{ eigrp_os_type }}_eigrp.j2"
+
+    - name: "Second Task: Source Template & Apply Configs!"
+      cli_config:
+        config: "{{ lookup('template', eigrp_path) }}"
+      notify: config_changed
+      register: response
+  
+
+  handlers:
+    - name: "Output Changes..."
+      listen: config_changed
+      debug:
+        msg: "{{ response }}"
+
+
