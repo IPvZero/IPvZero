@@ -1,0 +1,6 @@
+
+router eigrp {{ eigrp.as }}
+no auto
+eigrp router-id {{ eigrp.rid }}
+network {{ eigrp.network }}
+eigrp stub {{ eigrp.stub }}
