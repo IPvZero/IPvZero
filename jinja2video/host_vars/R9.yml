@@ -1,0 +1,9 @@
+
+---
+
+eigrp:
+    as: "5"
+    virtual: "IPvZero"
+    rid: "9.9.9.9"
+    network: "0.0.0.0 0.0.0.0"
+    stub: "connected"
