@@ -1,0 +1,68 @@
+---
+R1:
+    hostname: 192.168.153.11
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+
+R2:
+    hostname: 192.168.153.12
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+
+R3:
+    hostname: 192.168.153.13
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+
+
+R4:
+    hostname: 192.168.153.14
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+
+
+R5:
+    hostname: 192.168.153.15
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+
+
+R6:
+    hostname: 192.168.153.16
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+
+
+R7:
+    hostname: 192.168.153.17
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+
+R8:
+    hostname: 192.168.153.18
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
