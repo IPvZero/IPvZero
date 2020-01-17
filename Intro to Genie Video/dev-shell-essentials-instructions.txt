@@ -1,0 +1,8 @@
+git clone https://github.com/kepkin/dev-shell-essentials.git
+
+sudo nano .bashrc
+
+alias zx='highlight green "+" | highlight red "-"'
+
+cd dev-shell-essentials
+source dev-shell-essentials.sh
