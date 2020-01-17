@@ -1,0 +1,136 @@
+---
+testbed:
+
+  credentials:
+    default:
+      username: "john"
+      password: "cisco"
+
+devices:
+  R1:
+    alias: R1
+    os: ios
+    type: IOSv
+    connections:
+
+      defaults:
+        class: unicon.Unicon
+      console:
+        protocol: ssh
+        ip: 192.168.31.11
+
+    custom:
+      abstration:
+         order: [os, type]
+
+  R2:
+    alias: R2
+    os: ios
+    type: IOSv
+    connections:
+
+      defaults:
+        class: unicon.Unicon
+      console:
+        protocol: ssh
+        ip: 192.168.31.12
+
+    custom:
+      abstration:
+         order: [os, type]
+
+  R3:
+    alias: R3
+    os: ios
+    type: IOSv
+    connections:
+
+      defaults:
+        class: unicon.Unicon
+      console:
+        protocol: ssh
+        ip: 192.168.31.13
+
+    custom:
+      abstration:
+         order: [os, type]
+
+  R4:
+    alias: R4
+    os: ios
+    type: IOSv
+    connections:
+
+      defaults:
+        class: unicon.Unicon
+      console:
+        protocol: ssh
+        ip: 192.168.31.14
+
+    custom:
+      abstration:
+         order: [os, type]
+
+  R5:
+    alias: R5
+    os: ios
+    type: IOSv
+    connections:
+
+      defaults:
+        class: unicon.Unicon
+      console:
+        protocol: ssh
+        ip: 192.168.31.15
+
+    custom:
+      abstration:
+         order: [os, type]
+
+  R6:
+    alias: R6
+    os: ios
+    type: IOSv
+    connections:
+
+      defaults:
+        class: unicon.Unicon
+      console:
+        protocol: ssh
+        ip: 192.168.31.16
+
+    custom:
+      abstration:
+         order: [os, type]
+
+  R7:
+    alias: R7
+    os: ios
+    type: IOSv
+    connections:
+
+      defaults:
+        class: unicon.Unicon
+      console:
+        protocol: ssh
+        ip: 192.168.31.17
+
+    custom:
+      abstration:
+         order: [os, type]
+
+  R8:
+    alias: R8
+    os: ios
+    type: IOSv
+    connections:
+
+      defaults:
+        class: unicon.Unicon
+      console:
+        protocol: ssh
+        ip: 192.168.31.18
+
+    custom:
+      abstration:
+         order: [os, type]
