@@ -1,0 +1,27 @@
+snmp-server community public
+snmp-server enable traps firewall serverstatus
+snmp-server host 192.180.1.33 public
+snmp-server community comaccess ro 4
+snmp-server enable traps snmp authentication
+snmp-server host 8.8.8.8 version 2c public
+snmp-server group authgroup v3 auth
+snmp-server user authuser authgroup remote 192.180.1.27 v3 auth md5 mypassword
+snmp-server user authuser authgroup v3 auth md5 mypassword
+snmp-server host 192.180.1.27 informs version 3 auth authuser config
+snmp-server enable traps
+snmp-server inform retries 0
+logging host 8.8.8.8
+ntp server 1.1.1.1
+ntp update-calendar
+clock timezone PST -8
+clock summer-time PDT recurring
+service timestamps debug datetime msec localtime
+service timestamps
+no ip domain-lookup
+int g0/0
+description AUTOMATED DESCRIPTION ~~ VRF MGMT INTERFACE ~~
+exit
+line console 0
+logging synchronous
+exec-timeout 5
+exit
