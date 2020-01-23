@@ -1,0 +1,140 @@
+---
+
+
+R1:
+    hostname: 192.168.31.11
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+    data:
+        country: usa
+        region: north
+        state: washington
+        coast: west
+
+
+R2:
+    hostname: 192.168.31.12
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+    data:
+        country: usa
+        region: north
+        state: montana
+        coast: west
+
+
+R3:
+    hostname: 192.168.31.13
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+    data:
+        country: usa
+        region: north
+        state: minnesota
+
+
+R4:
+    hostname: 192.168.31.14
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+    data:
+        country: usa
+        region: north
+        state: michigan
+
+
+
+R5:
+    hostname: 192.168.31.15
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+    data:
+        country: usa
+        region: north
+        state: new york
+
+
+
+R6:
+    hostname: 192.168.31.16
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+    data:
+        country: usa
+        region: south
+        state: california
+        coast: west
+
+
+
+R7:
+    hostname: 192.168.31.17
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+    data:
+        country: usa
+        region: south
+        state: arizona
+        coast: west
+
+
+
+R8:
+    hostname: 192.168.31.18
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+    data:
+        country: usa
+        region: south
+        state: texas
+
+
+
+R9:
+    hostname: 192.168.31.19
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+    data:
+        country: usa
+        region: south
+        state: georgia
+
+
+R10:
+    hostname: 192.168.31.20
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+    data:
+        country: usa
+        region: south
+        state: florida
