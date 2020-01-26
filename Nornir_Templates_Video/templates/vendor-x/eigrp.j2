@@ -1,0 +1,4 @@
+router eigrp {{ host['domain'] }}
+address-family ipv4 autonomous-system {{ host['asn'] }}
+network 0.0.0.0
+eigrp router-id {{ host['hostname'] }}
