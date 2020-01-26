@@ -1,0 +1,4 @@
+router eigrp {{ host['asn'] }}
+no auto
+net 0.0.0.0
+eigrp router-id {{ host['hostname'] }}
