@@ -8,7 +8,7 @@ from colorama import Fore, Style
 nr = InitNornir(config_file='config.yaml')
 
 print(Fore.YELLOW + "*" * 5 + " INITIALISING FULL NETWORK PING TEST " + "*" * 25 + Style.RESET_ALL)
-print("Nornir is conducting a full ping test across all nodes in the the network...")
+print("Nornir is conducting a full ping test across all nodes in the network...")
 print("< If there are no alerts: all devices have full reachability >")
 print("\n")
 for i in range(1,9):
