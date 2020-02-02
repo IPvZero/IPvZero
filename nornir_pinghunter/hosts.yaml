@@ -1,0 +1,106 @@
+---
+
+
+R1:
+    hostname: 192.168.31.11
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+    data:
+        vendor: vendor-x
+        asn: 123
+        domain: ipvzero
+
+R2:
+    hostname: 192.168.31.12
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+    data:
+        vendor: vendor-x
+        asn: 123
+        domain: ipvzero
+
+
+R3:
+    hostname: 192.168.31.13
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+    data:
+        vendor: vendor-x
+        asn: 123
+        domain: ipvzero
+
+
+R4:
+    hostname: 192.168.31.14
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+    data:
+        vendor: vendor-x
+        asn: 123
+        domain: ipvzero
+
+
+
+
+R5:
+    hostname: 192.168.31.15
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+    data:
+        vendor: vendor-y
+        asn: 123
+        domain: ipvzero
+
+
+R6:
+    hostname: 192.168.31.16
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+    data:
+        vendor: vendor-y
+        asn: 123
+        domain: ipvzero
+
+
+R7:
+    hostname: 192.168.31.17
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+    data:
+        vendor: vendor-y
+        asn: 123
+        domain: ipvzero
+
+
+R8:
+    hostname: 192.168.31.18
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+    data:
+        vendor: vendor-y
+        asn: 123
+        domain: ipvzero
