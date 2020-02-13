@@ -1,0 +1,39 @@
+---
+
+grand_slam_winner:
+    data:
+        legend: True
+        won: 4
+
+tennis_player:
+    data:
+        racket: True
+        location: court
+
+athlete:
+    data:
+        fit: True
+        diet: healthy
+
+actor:
+    data:
+        location: netflix
+
+famous:
+    data:
+        well-known: True
+        followers: paparazzi
+
+begins_with_a_J:
+    data:
+        starts_with: consonant
+        first_letter_vowel: False
+human:
+    data:
+        homo-sapien: True
+        rights: human
+
+non-human:
+    data:
+         homo-sapien: False
+         rights: animal
