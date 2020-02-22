@@ -1,0 +1,121 @@
+---
+
+
+Core1:
+    hostname: 192.168.31.11
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+    data:
+        domain: ipvzero
+
+Core2:
+    hostname: 192.168.31.12
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+    data:
+        domain: ipvzero
+
+
+Distro3:
+    hostname: 192.168.31.13
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+    data:
+        domain: ipvzero
+
+
+Distro4:
+    hostname: 192.168.31.14
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+    data:
+        domain: ipvzero
+
+
+Distro5:
+    hostname: 192.168.31.15
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+    data:
+        domain: ipvzero
+
+
+Distro6:
+    hostname: 192.168.31.16
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+    data:
+        domain: ipvzero
+
+
+Access7:
+    hostname: 192.168.31.17
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+    data:
+        domain: ipvzero
+
+
+Access8:
+    hostname: 192.168.31.18
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+    data:
+        domain: ipvzero
+
+
+Access9:
+    hostname: 192.168.31.19
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+    data:
+        domain: ipvzero
+
+
+Access10:
+    hostname: 192.168.31.20
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+    data:
+        domain: ipvzero
+
+
+Edge:
+    hostname: 192.168.31.100
+    platform: 'ios'
+    username: john
+    password: cisco
+    groups:
+        - cisco_group
+    data:
+        domain: ipvzero
