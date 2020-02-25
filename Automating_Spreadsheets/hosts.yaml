@@ -1,0 +1,63 @@
+---
+
+
+R1:
+    hostname: 192.168.31.11
+    data:
+        domain: ipvzero
+
+
+R2:
+    hostname: 192.168.31.12
+    data:
+        domain: ipvzero
+
+
+R3:
+    hostname: 192.168.31.13
+    data:
+        domain: ipvzero
+
+
+R4:
+    hostname: 192.168.31.14
+    data:
+        domain: ipvzero
+
+
+R5:
+    hostname: 192.168.31.15
+    data:
+        domain: ipvzero
+
+
+R6:
+    hostname: 192.168.31.16
+    data:
+        domain: ipvzero
+
+
+R7:
+    hostname: 192.168.31.17
+    data:
+        domain: ipvzero
+
+
+
+R8:
+    hostname: 192.168.31.18
+    data:
+        domain: ipvzero
+
+
+Edge:
+    hostname: 192.168.31.19
+    data:
+        domain: ipvzero
+
+
+
+CoreSwitch:
+    hostname: 192.168.31.20
+    data:
+        domain: ipvzero
