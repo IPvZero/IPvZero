@@ -1,0 +1,42 @@
+---
+
+
+R1:
+    hostname: 192.168.31.11
+    data:
+        asn: 65001
+
+R2:
+    hostname: 192.168.31.12
+    data:
+        asn: 65001
+
+R3:
+    hostname: 192.168.31.13
+    data:
+        asn: 65001
+
+R4:
+    hostname: 192.168.31.14
+    data:
+        asn: 65001
+
+R5:
+    hostname: 192.168.31.15
+    data:
+        asn: 65001
+
+R6:
+    hostname: 192.168.31.16
+    data:
+        asn: 65001
+
+R7:
+    hostname: 192.168.31.17
+    data:
+        asn: 65001
+
+R8:
+    hostname: 192.168.31.18
+    data:
+        asn: 65001
