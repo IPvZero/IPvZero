@@ -1,0 +1,383 @@
+---
+
+
+R1:
+    hostname: 192.168.31.101
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+
+R2:
+    hostname: 192.168.31.102
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+
+R3:
+    hostname: 192.168.31.103
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+
+R4:
+    hostname: 192.168.31.104
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+
+R5:
+    hostname: 192.168.31.105
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+
+R6:
+    hostname: 192.168.31.106
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+
+R7:
+    hostname: 192.168.31.107
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+R8:
+    hostname: 192.168.31.108
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+R9:
+    hostname: 192.168.31.109
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+
+R10:
+    hostname: 192.168.31.110
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+
+R11:
+    hostname: 192.168.31.111
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+R12:
+    hostname: 192.168.31.112
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+
+
+R13:
+    hostname: 192.168.31.113
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+R14:
+    hostname: 192.168.31.114
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+R15:
+    hostname: 192.168.31.115
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+R16:
+    hostname: 192.168.31.116
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+R17:
+    hostname: 192.168.31.117
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+R18:
+    hostname: 192.168.31.118
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+R19:
+    hostname: 192.168.31.119
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+R20:
+    hostname: 192.168.31.120
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+R21:
+    hostname: 192.168.31.121
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+R22:
+    hostname: 192.168.31.122
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+R23:
+    hostname: 192.168.31.123
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+R24:
+    hostname: 192.168.31.124
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+R25:
+    hostname: 192.168.31.125
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+R26:
+    hostname: 192.168.31.126
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+R27:
+    hostname: 192.168.31.127
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+R28:
+    hostname: 192.168.31.128
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+
+R29:
+    hostname: 192.168.31.129
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+
+R30:
+    hostname: 192.168.31.130
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+
+R31:
+    hostname: 192.168.31.131
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+
+R32:
+    hostname: 192.168.31.132
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+
+R33:
+    hostname: 192.168.31.133
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+
+R34:
+    hostname: 192.168.31.134
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+
+R35:
+    hostname: 192.168.31.135
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+
+R36:
+    hostname: 192.168.31.136
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+
+R37:
+    hostname: 192.168.31.137
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+
+R38:
+    hostname: 192.168.31.138
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+
+R39:
+    hostname: 192.168.31.139
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+
+R40:
+    hostname: 192.168.31.140
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+
+R41:
+    hostname: 192.168.31.141
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+
+R42:
+    hostname: 192.168.31.142
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+
+R43:
+    hostname: 192.168.31.143
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+
+R44:
+    hostname: 192.168.31.144
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+
+R45:
+    hostname: 192.168.31.145
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+
+R46:
+    hostname: 192.168.31.146
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+
+R47:
+    hostname: 192.168.31.147
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+
+R48:
+    hostname: 192.168.31.148
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+
+R49:
+    hostname: 192.168.31.149
+    platform: 'ios'
+    groups:
+        - cisco_group
+
+
+
+R50:
+    hostname: 192.168.31.150
+    platform: 'ios'
+    groups:
+        - cisco_group
